@@ -1,0 +1,24 @@
+.header-logo{
+  color: $black;
+  font-family: $text-Poppins;
+  font-size: 32.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: inline-block;
+}
+
+.dots {
+  position: absolute;
+  top: 8px;
+  left: 71.34%;
+  display: flex;
+  gap: 16px;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $green;
+}

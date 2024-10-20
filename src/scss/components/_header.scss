@@ -1,0 +1,57 @@
+.header{
+  background-color: $white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-links{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  padding-right: 287px;
+  @include tablet{
+    padding-right: 0;
+  }
+}
+
+.header-link-element-text{
+  width: 83px;
+  color: rgba(64, 64, 64, 0.80);
+  text-align: center;
+  font-family: $text-Open-Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    color: $green;
+  }
+}
+
+.header-button{
+  width: 123px;
+  height: 44px;
+  flex-shrink: 0;
+  border: none;
+  background-color: $green;
+  color: $white;
+  border-radius: 5px;
+  font: $text-Source-Sans-3;
+  transition: color 300ms ease-in-out;
+  &:focus,
+  &:hover{
+    background-color: $footer-form-green;
+  }
+}

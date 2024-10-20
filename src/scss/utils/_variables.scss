@@ -4,21 +4,11 @@ $green: #09B451;
 $text-black: #333333;
 $footer-form-green: #3BD27B;
 $purple: #242243;
-$text-fount: "Poppins";
-$header-text: "Open Sans";
-$baton-text: "Source Sans Pro";
+$text-Poppins: "Poppins";
+$text-Open-Sans: "Open Sans";
+$text-Source-Sans-3: "Source Sans 3";
 
 
-
-@mixin button($bg, $bs: 0px 4px 4px rgba(0, 0, 0, 0.15)) {
-  background: $bg;
-  height: 100%;
-  text-decoration: none;
-  box-shadow: $bs;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
 
 @mixin mobile {
   @media screen and (max-width: 767.9px) and (min-width: 0) {
