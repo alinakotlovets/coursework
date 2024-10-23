@@ -3,6 +3,7 @@
   align-items: center;
   text-align: center;
   border-radius: 50px;
+  margin-bottom: 85px;
 }
 
 .hero .container{
@@ -42,14 +43,14 @@
   transform: translateY(-50%);
   z-index: -1;
   @include mobile{
-    height: 1000px;
-    left: 470px;
-    top: 30%;
+    height: 700px;
+    left: 290px;
+    top: 0;
   }
   @include tablet{
-    height: 1000px;
-    left: 610px;
-    top: 20%;
+    height: 950px;
+    left: 555px;
+    top: 15%;
   }
 }
 .hero-ellipse{
@@ -133,21 +134,19 @@
 }
 
 .hero-img{
+  display: inline;
   position: relative;
   width: 431px;
   height: 508px;
-  flex-direction: column;
   flex-shrink: 0;
   border-radius: 40px 40px 100px 40px;
   @include mobile{
-    height: auto;
-    width: auto;
-    padding-left: 100px;
+    height: 306px;
+    width: 260px;
   }
   @include tablet{
     height: auto;
     width: auto;
-    padding-left: 240px;
   }
 }
 
@@ -172,14 +171,14 @@
     padding: 9px 12px 6px 13px;
     height: auto;
     width: auto;
-    left: 75px;
+    left: 6px;
   }
   @include tablet{
     border-radius: 7px 7px 16px 7px;
     padding: 9px 12px 6px 13px;
     height: auto;
     width: auto;
-    left: 180px;
+    left: 40px;
   }
 }
 
@@ -200,9 +199,9 @@
     border: white 1.6px;
   }
   @include tablet{
-    height: 30px;
-    width: 30px;
-    margin-right: -12px;
+    height: 40px;
+    width: 40px;
+    margin-right: -19px;
     border: white 1.6px;
   }
 }
@@ -212,8 +211,8 @@
     width: 115px;
   }
   @include tablet{
-    font-size: 15px;
-    width: 150px;
+    font-size: 20px;
+    width: 200px;
   }
 }
 
@@ -233,13 +232,12 @@
   @include mobile{
     border-radius: 4px 4px 10px 4px;
     box-shadow: 0px 0px 42.698px 0px rgba(112, 112, 112, 0.25);
-    left: 422px;
-    top: 84%;
+    left: 270px;
   }
   @include tablet{
     border-radius: 7px 7px 15px 4px;
     box-shadow: 0px 0px 42.698px 0px rgba(112, 112, 112, 0.25);
-    left: 575px;
+    left: 480px;
   }
 }
 
@@ -258,9 +256,9 @@
     padding: 4px;
   }
   @include tablet{
-    width: 22px;
-    height: 22px;
-    padding: 5px;
+    width: 27px;
+    height: 27px;
+    padding: 6px;
   }
 }
 
@@ -291,9 +289,5 @@
   @include mobile{
     font-size: 7px;
     width: 62px;
-  }
-  @include tablet{
-    font-size: 10px;
-    width: 82px;
   }
 }
