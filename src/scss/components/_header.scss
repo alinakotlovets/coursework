@@ -9,6 +9,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include tablet{
+    gap: 40px;
+  }
 }
 
 .header-links{
@@ -16,9 +19,9 @@
   align-items: center;
   gap: 24px;
   list-style: none;
-  padding-right: 287px;
-  @include tablet{
-    padding-right: 0;
+  padding-right: 0;
+  @include desktop{
+    padding-right: 287px;
   }
 }
 
