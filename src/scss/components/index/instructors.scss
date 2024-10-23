@@ -1,0 +1,131 @@
+.instructors{
+  margin-bottom: 60px;
+}
+.instructors-title{
+  color: $black;
+  font-family: $text-Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 64px;
+  @include mobile{
+    font-size: 16px;
+  }
+  @include tablet{
+    font-size: 22px;
+  }
+}
+
+.instructors-list{
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  @include mobile{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  @include tablet{
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+.instructors-list-element{
+  box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+  border-radius: 6px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  min-width: 390px;
+  min-height: 370px;
+  text-align: center;
+  @include mobile{
+    min-width: 178px;
+    min-height: 173px;
+    max-width: 182px;
+  }
+  @include tablet{
+    min-width: 290px;
+    min-height: 350px;
+    max-width: 300px;
+  }
+}
+
+.instructors-list-element-img{
+  height: 114px;
+  width: 114px;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  margin-bottom: 10px;
+  @include mobile{
+    height: 53px;
+    width: 53px;
+    margin-bottom: 5px;
+  }
+  @include mobile{
+    height: 65px;
+    width: 65px;
+    margin-bottom: 5px;
+  }
+}
+
+.instructors-list-element-title{
+  width: 366px;
+  color: $text-black;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 136.5%;
+  margin-bottom: 4px;
+  @include mobile{
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+  @include mobile{
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+}
+
+.instructors-list-element-text{
+  width: 390px;
+  color: $green;
+  text-align: center;
+  font-family: $text-Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 136.5%;
+  margin-bottom: 30px;
+  @include mobile{
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+  @include mobile{
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+
+.instructors-list-element-description{
+  width: 298px;
+  height: 53px;
+  color:$text-black;
+  text-align: center;
+  font-family: $text-Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  @include mobile {
+    font-size: 8px;
+    width: 139px;
+    height: 37px;
+  }
+  @include tablet {
+    font-size: 12px;
+    width: 200px;
+    height: 43px;
+  }
+}
