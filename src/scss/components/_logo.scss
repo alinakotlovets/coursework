@@ -7,18 +7,29 @@
   line-height: normal;
   position: relative;
   display: inline-block;
+  @include mobile{
+    font-size: 23px;
+  }
 }
 
 .dots {
   position: absolute;
   top: 8px;
-  left: 71.34%;
+  left: 71.6%;
   display: flex;
-  gap: 16px;
+  gap: 15px;
+  @include mobile{
+    gap: 11px;
+    top: 6px;
+  }
 }
 .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: $green;
+  @include mobile{
+    width: 4px;
+    height: 4px;
+  }
 }

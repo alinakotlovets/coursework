@@ -29,7 +29,7 @@
                     <a href="" class="header-link-element-text">Courses</a>
                 </li>
                 <li class="header-link-element">
-                    <a href="" class="header-link-element-text">Instuctors</a>
+                    <a href="#instructors" class="header-link-element-text">Instuctors</a>
                 </li>
                 <li class="header-link-element">
                     <a href="" class="header-link-element-text">Schedules</a>
@@ -39,10 +39,36 @@
         <nav class="header-box-button">
             <button class="header-button">Contact Us</button>
         </nav>
+        <button class="mobile-button " type="button" data-menu-button aria-expanded="false">
+            <img class="mobile-button-open" src="images/svg/mobile-button.svg" alt="open-button">
+            <img class="mobile-button-close" src="images/svg/close_24px.svg" alt="close-button">
+        </button>
+    </div>
+    <div class="mobile" data-menu>
+        <nav class="mobile-box-links">
+            <ul class="mobile-links">
+                <li class="mobile-link-element">
+                    <a href="#home" class="mobile-link-element-text" data-menu-link>Home</a>
+                </li>
+                <li class="mobile-link-element">
+                    <a href="#courses" class="mobile-link-element-text" data-menu-link>Courses</a>
+                </li>
+                <li class="mobile-link-element">
+                    <a href="#instructors" class="mobile-link-element-text" data-menu-link>Instructors</a>
+                </li>
+                <li class="mobile-link-element">
+                    <a href="#schedules" class="mobile-link-element-text" data-menu-link>Schedules</a>
+                </li>
+            </ul>
+            <nav class="mobile-box-button">
+                <button class="mobile-box-button-element">Contact Us</button>
+            </nav>
+        </nav>
+
     </div>
 </header>
 <main>
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="container">
             <div class="hero-box-left">
                 <span class="hero-ellipse"> </span>
@@ -116,7 +142,7 @@
             </ul>
         </div>
     </section>
-    <section class="instructors">
+    <section  id="instructors" class="instructors">
         <div class="container">
             <h2 class=" instructors-title"> Meet our instructors</h2>
             <ul class=" instructors-list">

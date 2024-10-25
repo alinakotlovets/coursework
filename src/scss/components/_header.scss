@@ -23,6 +23,9 @@
   @include desktop{
     padding-right: 287px;
   }
+  @include mobile{
+    display: none;
+  }
 }
 
 .header-link-element-text{
@@ -57,4 +60,130 @@
   &:hover{
     background-color: $footer-form-green;
   }
+  @include mobile{
+    display: none;
+  }
+}
+
+
+
+
+//mobile
+
+
+.mobile-button {
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 100;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile-button-open,
+.mobile-button-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms ease;
+}
+
+
+.mobile-button-close {
+  opacity: 0;
+}
+
+.mobile-button.is-open .mobile-button-close {
+  opacity: 1;
+}
+
+.mobile-button.is-open .mobile-button-open {
+  opacity: 0;
+}
+
+.mobile{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 48px 40px;
+  z-index: 20;
+  transform: translateX(100%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet{
+    display: none;
+  }
+  @include desktop{
+    display: none;
+  }
+}
+
+.mobile.is-open {
+  transform: translateX(0);
+}
+
+.mobile-nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-link-element-text{
+  font-family: $text-Open-Sans;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.mobile-link-element{
+  cursor: pointer;
+  &:hover,
+  &:focus{
+    color: $green;
+  }
+}
+
+.mobile-box-button{
+  display: flex;
+  padding-top: 100px;
+}
+.mobile-box-button-element{
+  width: 123px;
+  height: 44px;
+  flex-shrink: 0;
+  border: none;
+  background-color: $green;
+  color: $white;
+  border-radius: 5px;
+  font: $text-Source-Sans-3;
+  transition: color 300ms ease-in-out;
+  &:focus,
+  &:hover{
+    background-color: $footer-form-green;
+  }
+  @include desktop{
+    display: none;
+  }
+  @include tablet{
+    display: none;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
