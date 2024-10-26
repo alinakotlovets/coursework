@@ -1,7 +1,122 @@
+.education{
+  display: flex;
+  justify-content: center;
+}
+.education .container{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.education-title{
+  color: $black;
+  font-family: $text-Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 64px;
+}
+.education-box-left{
+  position: relative;
+}
+
+.education-box-left-img{
+  position: relative;
+  display: flex;
+  width: 392px;
+  height: 460px;
+  padding-bottom: 0.5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 29px 29px 72px 29px;
+}
+
+.education-job-box{
+  position: absolute;
+  display: flex;
+  width: 129px;
+  padding: 12px 9px 26px 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 7px 7px 17px 7px;
+  background: $white;
+  box-shadow: 0px 0px 76px 0px rgba(112, 112, 112, 0.25);
+  transform: translateY(-50%);
+  left: 325px;
+  top: 65%;
+  z-index: 1;
+}
+.education-job-box-of-text{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  gap: -10;
+}
+
+.education-job-box-for-img{
+  position: relative;
+  display: flex;
+  width: 41px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  background: $lime;
+}
+
+
+.education-box-right{
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+.education-box-right-list-element{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.education-img-box{
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: $lime;
+  justify-content: center;
+  align-items: center;
+}
 .education-img{
-  fill: $green;
+  display: flex;
+  justify-self: center;
+}
+
+.education-box-right-list-element-text{
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.education-job-box-title{
   color: $green;
+  font-family: $text-Poppins;
+}
+.education-job-box-text{
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
 
-
-
+.education-box-right-title{
+  width: 533px; //як тут без бо воно їде
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
 }
