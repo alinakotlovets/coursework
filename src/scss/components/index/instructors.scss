@@ -1,5 +1,11 @@
 .instructors{
   margin-bottom: 60px;
+  @include mobile{
+    margin-bottom: 45px;
+  }
+  @include tablet{
+    margin-bottom: 52px;
+  }
 }
 .instructors-title{
   color: $black;

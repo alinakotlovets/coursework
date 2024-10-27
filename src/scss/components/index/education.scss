@@ -6,6 +6,17 @@
   display: flex;
   align-items: center;
   gap: 100px;
+  margin-bottom: 98px;
+  @include mobile{
+    flex-direction: column;
+    gap: 31px;
+    margin-bottom: 48px;
+  }
+  @include tablet{
+    flex-direction: column;
+    margin-bottom: 78px;
+    gap: 55px;
+  }
 }
 
 .education-title{
@@ -14,6 +25,14 @@
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 64px;
+  @include tablet{
+    font-size: 22px;
+    margin-bottom: 44px;
+  }
+  @include mobile{
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
 }
 .education-box-left{
   position: relative;
@@ -77,6 +96,8 @@
   display: flex;
   align-items: center;
   gap: 24px;
+}
+.education-box-right-list-element:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -88,10 +109,26 @@
   background: $lime;
   justify-content: center;
   align-items: center;
+  @include tablet{
+    width: 40px;
+    height: 40px;
+  }
+  @include mobile{
+    width: 30px;
+    height: 30px;
+  }
 }
 .education-img{
   display: flex;
   justify-self: center;
+  @include tablet{
+    width: 20px;
+    height: 20px;
+  }
+  @include mobile{
+    width: 11px;
+    height: 11px;
+  }
 }
 
 .education-box-right-list-element-text{
@@ -99,6 +136,12 @@
   font-family: $text-Poppins;
   font-size: 20px;
   font-weight: 500;
+  @include mobile{
+    font-size: 14px;
+  }
+  @include tablet{
+    font-size: 17px;
+  }
 }
 
 .education-job-box-title{
@@ -119,4 +162,10 @@
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 24px;
+  @include tablet{
+    font-size: 32px;
+  }
+  @include mobile{
+    font-size: 24px;
+  }
 }
