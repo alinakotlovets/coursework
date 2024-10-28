@@ -1,0 +1,127 @@
+.popular-course-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.popular-course-top-box{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.popular-course-top-box-select{
+  width: auto;
+  height: 46px;
+  display: inline-flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  border-radius: 50px;
+  background: #09B451;
+}
+
+
+.popular-course-top-box-select-element,
+.popular-course-top-box-select{
+  border: none;
+  outline: none;
+  color: $white;
+  font-family: $text-Poppins;
+  font-size: 18px;
+  font-weight: 400;
+}
+.popular-course-top-box-title{
+  color: $text-black;
+  font-family:$text-Poppins;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.popular-course-list-element{
+  width: 392px;
+  height: 405px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $white;
+  box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+}
+
+.popular-course-list-img{
+  width: 391px;
+  height: 215px;
+  flex-shrink: 0;
+}
+
+.popular-course-list-title-box{
+  display: flex;
+  padding: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.popular-course-list-title{
+  width: 295px;
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.popular-course-list-rating-box{
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  padding-top: 8px;
+
+}
+.popular-course-list-rating-star{
+  width: 18px;
+  height: 18px;
+}
+
+.popular-course-list-rating-text{
+  color: $black;
+  font-family: $text-Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  align-self: center;
+
+
+}
+.popular-course-list-text-box{
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popular-course-list-text-time{
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+.popular-course-list-students-img{
+  width: 13.333px;
+  height: 12px;
+  flex-shrink: 0;
+  fill: $green;
+}
+
+.popular-course-list-students-box{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.popular-course-list-prise{
+  color: $green;
+  font-family: $text-Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 60px;
+}

@@ -1,17 +1,16 @@
-const filterButton = document.querySelectorAll(".button-list-item");
-const filterableCard = document.querySelectorAll(".project-list-element");
+const filterableCards = document.querySelectorAll(".popular-course-list-element");
+const selectElement = document.getElementById("course-select");
 
-const filterCard = (e) => {
-  document.querySelector(".active").classList.remove("active");
-  e.target.classList.add("active");
+const filterCards = () => {
+  const selectedCategory = selectElement.options[selectElement.selectedIndex].dataset.name;
 
-  filterableCard.forEach((card) => {
-    card.classList.add("hide");
-
-    if (card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all") {
+  filterableCards.forEach((card) => {
+    if (card.dataset.name === selectedCategory || selectedCategory === "all") {
       card.classList.remove("hide");
+    } else {
+      card.classList.add("hide");
     }
   });
 };
 
-filterButton.forEach((button) => button.addEventListener("click", filterCard));
+selectElement.addEventListener("change", filterCards);

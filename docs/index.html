@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
           rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 <body class="body">
 <header class="header">
@@ -147,59 +151,186 @@
         </div>
     </section>
 
-    <section class="course">
-        <div class="container">
-            <h3 class="course-title">Choose favourite course from top cartegories</h3>
-            <div class="course-slideshow-box">
-                <div class="course-slideshow-button-box">
-                    <button class="course-slideshow-prev"><</button>
-                </div>
-                <div class="course-slideshow-container"> <!-- Додано новий контейнер -->
-                    <ul class="course-slideshow-list">
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Marketing.jpg" alt="Marketing">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Design.jpg" alt="Design">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Design</p>
-                            </div>
-                        </li>
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Programming.jpg" alt="Programming">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Programming</p>
-                            </div>
-                        </li>
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Technology.jpg" alt="Technology">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Technology</p>
-                            </div>
-                        </li>
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Cooking.jpg" alt="Cooking">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Cooking</p>
-                            </div>
-                        </li>
-                        <li class="course-slideshow-list-element">
-                            <img class="course-slideshow-img" src="images/Photography.jpg" alt="Photography">
-                            <div class="course-slideshow-box-text">
-                                <p class="course-slideshow-text">Photography</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="course-slideshow-button-box">
-                    <button class="course-slideshow-next">></button>
-                </div>
-            </div>
+<!--    <section class="course">-->
+<!--        <div class="container">-->
+<!--            <h3 class="course-title">Choose favourite course from top cartegories</h3>-->
+<!--            <div class="swiper-container">-->
+<!--                <div class="course-slideshow-button-box">-->
+<!--                    <button class="swiper-button-prev"></button>-->
+<!--                </div>-->
+<!--                <div class="course-slideshow-container"> &lt;!&ndash; Додано новий контейнер &ndash;&gt;-->
+<!--                    <ul class="course-slideshow-list">-->
+<!--                        <li class="swiper-slide">-->
+<!--                            <img class="course-slideshow-img" src="images/Marketing.jpg" alt="Marketing">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Marketing</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="course-slideshow-list-element">-->
+<!--                            <img class="course-slideshow-img" src="images/Design.jpg" alt="Design">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Design</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="course-slideshow-list-element">-->
+<!--                            <img class="course-slideshow-img" src="images/Programming.jpg" alt="Programming">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Programming</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="course-slideshow-list-element">-->
+<!--                            <img class="course-slideshow-img" src="images/Technology.jpg" alt="Technology">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Technology</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="course-slideshow-list-element">-->
+<!--                            <img class="course-slideshow-img" src="images/Cooking.jpg" alt="Cooking">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Cooking</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                        <li class="course-slideshow-list-element">-->
+<!--                            <img class="course-slideshow-img" src="images/Photography.jpg" alt="Photography">-->
+<!--                            <div class="course-slideshow-box-text">-->
+<!--                                <p class="course-slideshow-text">Photography</p>-->
+<!--                            </div>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <div class="course-slideshow-button-box">-->
+<!--                    <button class="swiper-button-next"></button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+<section class="popular-course">
+    <div class="container">
+        <div class="popular-course-top-box">
+            <h3 class="popular-course-top-box-title">Most Popular courses</h3>
+            <label for="course-select" class="popular-course-label"></label>
+            <select id="course-select" class="popular-course-top-box-select">
+                <option class="popular-course-top-box-select-element" value="1" data-name="all">Sort by</option>
+                <option class="popular-course-top-box-select-element" value="2" data-name="technology">Technology</option>
+                <option class="popular-course-top-box-select-element" value="3" data-name="marketing">Marketing</option>
+                <option class="popular-course-top-box-select-element" value="4" data-name="photography">Photography</option>
+                <option class="popular-course-top-box-select-element" value="5" data-name="cooking">Cooking</option>
+                <option class="popular-course-top-box-select-element" value="6" data-name="programming">Programming</option>
+            </select>
         </div>
-    </section>
+        <ul class="popular-course-list">
+            <li class="popular-course-list-element">
+                <img class="popular-course-list-img" src="images/Frame%206530.jpg" alt="Learn-marketing" data-name="marketing">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Learn Marketing from Top Instructors.</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+            <li class="popular-course-list-element" data-name="programming" >
+                <img class="popular-course-list-img" src="images/Frame%206530%20(1).jpg" alt="Front-end">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Front-end development is not hard as you think</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+            <li class="popular-course-list-element" data-name="technology">
+                <img class="popular-course-list-img" src="images/Frame%206530%20(2).jpg" alt="UX">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Everything you need to know in UX</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+            <li class="popular-course-list-element" data-name="photography">
+                <img class="popular-course-list-img" src="images/Frame%206530%20(3).jpg" alt="photography">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Learn photography with ease</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+            <li class="popular-course-list-element" data-name="marketing">
+                <img class="popular-course-list-img" src="images/Frame%206530%20(4).jpg" alt="analysis">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Be a pro in data analysis</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+            <li class="popular-course-list-element" data-name="cooking">
+                <img class="popular-course-list-img" src="images/Frame%206530%20(5).jpg" alt="Ethical-Harking">
+                <div class="popular-course-list-title-box">
+                    <h3 class="popular-course-list-title">Ethical Harking is not hard as you think</h3>
+                    <div class="popular-course-list-rating-box">
+                        <img class="popular-course-list-rating-star" src="images/svg/ant-design_star-outlined.svg" alt="star">
+                        <p class="popular-course-list-rating-text">4.5</p>
+                    </div>
+                </div>
+                <div class="popular-course-list-text-box">
+                    <p class="popular-course-list-text-time">6 weeks</p>
+                    <div class="popular-course-list-students-box">
+                        <img class="popular-course-list-students-img" src="images/svg/Vector%20(2).svg" alt="students">
+                        <p class="popular-course-list-students-text">1.5k Students</p>
+                    </div>
+                    <p class="popular-course-list-prise">30.5$</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 
     <div class="container">
         <h3 class="education-title">We Bring The Good Education To Life</h3>
@@ -283,5 +414,18 @@
 <script src="./js/modal.js"></script>
 <script src="./js/nav.js"></script>
 <script src="./js/slider.js"></script>
+<script src="./js/filter.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 </body>
 </html>
