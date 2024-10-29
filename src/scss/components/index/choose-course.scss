@@ -1,8 +1,10 @@
 .choose-course {
   position: relative;
   margin-bottom: 98px;
+  @include mobile{
+    margin-bottom: 56px;
+  }
 
-  .swiper{
     .swiper-button-next,
     .swiper-button-prev {
       height: 50px;
@@ -11,13 +13,24 @@
       color: $green;
       border-radius: 50px;
       background: white;
+      @include mobile{
+        display: none;
+      }
+      @include tablet{
+        display: none;
+      }
     }
 
     .swiper-button-prev:after,
     .swiper-button-next:after{
       font-size: 20px;
+      @include mobile{
+        display: none;
+      }
+      @include tablet{
+        display: none;
+      }
     }
-  }
 
   .course-title{
     color:$text-black;
@@ -25,25 +38,69 @@
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 64px;
+    @include mobile{
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    @include tablet{
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 44px;
+    }
   }
 
-  .swiper-slide{
+  .swiper-slide, .swiper-slide-active{
     display: flex;
     width: 291px;
     height: 432px;
     align-items: center;
     flex-shrink: 0;
+    @include mobile{
+      min-width: 30%;
+      height: 133px;
+      border-radius: 5px;
+    }
+    @include tablet{
+      min-width: 220px;
+      height: 80%;
+      border-radius: 5px;
+    }
+  }
+  .course-slideshow-img{
+    @include mobile{
+      width: 200px;
+      height: 100%;
+      border-radius: 5px;
+    }
+    @include tablet{
+      width: 220px;
+      height: 100%;
+      border-radius: 5px;
+    }
   }
   .course-slideshow-box-text {
     position: absolute;
-    bottom: 0;
-    left: 0;
     width: 291px;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: flex-end;
     padding: 16px;
+    @include mobile{
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+    @include tablet{
+      width: 220px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
 
   }
   .course-slideshow-text{
@@ -52,6 +109,14 @@
     font-weight: 600;
     font-family: $text-Poppins;
     word-wrap: break-word;
+    @include mobile{
+      flex-shrink: 0;
+      font-size: 11.5px;
+    }
+    @include tablet{
+      flex-shrink: 0;
+      font-size: 20px;
+    }
   }
 
 
