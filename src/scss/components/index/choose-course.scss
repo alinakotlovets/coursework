@@ -1,0 +1,77 @@
+.choose-course {
+  position: relative;
+  margin-bottom: 98px;
+
+  .swiper{
+    .swiper-button-next,
+    .swiper-button-prev {
+      height: 50px;
+      width: 50px;
+      font-size: 20px;
+      color: $green;
+      border-radius: 50px;
+      background: white;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+      font-size: 20px;
+    }
+  }
+
+  .course-title{
+    color:$text-black;
+    font-family: $text-Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 64px;
+  }
+
+  .swiper-slide{
+    display: flex;
+    width: 291px;
+    height: 432px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .course-slideshow-box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 291px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+
+  }
+  .course-slideshow-text{
+    color: $white;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: $text-Poppins;
+    word-wrap: break-word;
+  }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

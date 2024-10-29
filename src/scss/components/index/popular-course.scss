@@ -3,6 +3,14 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-bottom: 40px;
+  @include mobile{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  @include tablet{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
 }
 
 .popular-course-top-box{
@@ -10,6 +18,7 @@
   justify-content: space-between;
   margin-bottom: 36px;
 }
+
 
 .popular-course-top-box-select{
   width: auto;
@@ -21,6 +30,10 @@
   gap: 5px;
   border-radius: 50px;
   background: #09B451;
+  @include mobile{
+    height: 36px;
+    border-radius: 28px;
+  }
 }
 
 
@@ -32,6 +45,9 @@
   font-family: $text-Poppins;
   font-size: 18px;
   font-weight: 400;
+  @include mobile{
+    font-size: 12px;
+  }
 }
 .popular-course-top-box-title{
   color: $text-black;
@@ -39,21 +55,44 @@
   font-size: 32px;
   font-weight: 600;
   text-transform: capitalize;
+  @include mobile{
+    font-size: 16px;
+  }
+
 }
 
 .popular-course-list-element{
-  width: 392px;
-  height: 405px;
+  width:370px;;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 10px;
   background: $white;
   box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+  @include mobile{
+    width: 182px;
+    height: 100%;
+    border-radius: 5px;
+  }
+  @include tablet{
+    width: 335px;
+    height: 100%;
+    border-radius: 7px;
+  }
 }
 
 .popular-course-list-img{
-  width: 391px;
+  width: 100%;
   height: 215px;
   flex-shrink: 0;
+  border-radius: 5px;
+  @include mobile{
+    width: 182px;
+    height: 103px;
+  }
+  @include tablet{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .popular-course-list-title-box{
@@ -61,14 +100,30 @@
   padding: 24px;
   justify-content: flex-start;
   align-items: flex-start;
+  @include mobile{
+    padding: 3px 13px 3px;
+  }
+  @include tablet{
+    padding: 5px 20px 5px;
+  }
 }
 .popular-course-list-title{
-  width: 295px;
+  width: 295px; //як тут?
   color: $text-black;
   font-family: $text-Poppins;
   font-size: 24px;
   font-weight: 500;
   text-transform: capitalize;
+  @include mobile{
+    //width: 152px;
+    //font-size: 13px;
+    //line-height: 20px;
+    font-size: 14px;
+    align-items: center;
+  }
+  @include tablet{
+    font-size: 20px;
+  }
 }
 
 .popular-course-list-rating-box{
@@ -81,6 +136,10 @@
 .popular-course-list-rating-star{
   width: 18px;
   height: 18px;
+  @include mobile{
+    width: 8px;
+    height: 8px;
+  }
 }
 
 .popular-course-list-rating-text{
@@ -89,14 +148,25 @@
   font-size: 13px;
   font-weight: 400;
   align-self: center;
-
-
+  @include mobile{
+    font-size: 8px;
+  }
 }
+
 .popular-course-list-text-box{
   padding: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile{
+    padding: 0 13px 0;
+    flex-wrap: wrap-reverse;
+    gap: 5px;
+    margin-bottom: 8px;
+  }
+  @include tablet{
+    padding: 5px 20px 5px;
+  }
 }
 
 .popular-course-list-text-time{
@@ -104,14 +174,36 @@
   font-family: $text-Poppins;
   font-size: 16px;
   font-weight: 500;
+  @include mobile{
+    font-size: 12px;
+  }
+  @include tablet{
+    font-size: 14px;
+  }
 }
 .popular-course-list-students-img{
   width: 13.333px;
   height: 12px;
   flex-shrink: 0;
   fill: $green;
+  @include mobile {
+    width: 10px;
+    height: 9px;
+  }
 }
 
+.popular-course-list-students-text{
+  color: $text-black;
+  font-family: $text-Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  @include mobile{
+    font-size: 12px;
+  }
+  @include tablet{
+    font-size: 14px;
+  }
+}
 .popular-course-list-students-box{
   display: flex;
   align-items: center;
@@ -123,5 +215,13 @@
   font-family: $text-Poppins;
   font-size: 24px;
   font-weight: 600;
-  padding-left: 60px;
+  padding-left: 40px;
+  @include mobile{
+    font-size: 14px;
+    padding-left: 0;
+  }
+  @include tablet{
+    font-size: 20px;
+    padding-left: 20px;
+  }
 }

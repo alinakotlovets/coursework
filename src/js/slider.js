@@ -1,13 +1,8 @@
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4, // Кількість видимих слайдів одночасно
-    spaceBetween: 30, // Проміжок між слайдами (в пікселях)
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 32,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    loop: true, // Безкінечний цикл
 });
