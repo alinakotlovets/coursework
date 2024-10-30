@@ -8,6 +8,8 @@
     flex-wrap: wrap;
     gap: 16px;
   }
+
+  //jj
   @include tablet{
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
