@@ -4,6 +4,9 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  @include mobile{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/last%20CTA.png");
+  }
 }
 
 
@@ -11,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-content: center;
 }
 
 .staircase-img{
@@ -18,10 +22,34 @@
   height: 517px;
   position: absolute;
   top: -10%;
+  @include mobile{
+    display: none;
+  }
+  @include tablet{
+    display: none;
+  }
 }
 
 .staircase-text-box{
   padding-top: 40px;
+  @include mobile{
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include tablet{
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .staircase-title{
@@ -32,6 +60,15 @@
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 24px;
+  @include mobile{
+    width: 351px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 38px;
+  }
+  @include tablet{
+    text-align: center;
+  }
 }
 
 .staircase-text{
@@ -42,6 +79,17 @@
   font-weight: 400;
   text-transform: capitalize;
   margin-bottom: 89px;
+  @include mobile{
+    width: 311px;
+    height: 71px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 64px;
+  }
+  @include tablet{
+    text-align: center;
+  }
 }
 .staircase-button{
   color: $white;
@@ -55,6 +103,16 @@
   align-items: center;
   margin-bottom: 76px;
   transition: color 300ms ease-in-out;
+  @include mobile{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  @include tablet{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
   &:hover,
   &:focus{
     background-color: $footer-form-green;
