@@ -513,12 +513,70 @@
             </ul>
         </div>
     </section>
+    <section class="staircase">
+        <div class="container">
+            <div class="staircase-box-img">
+                <img class="staircase-img" src="images/image-modal.png" alt="image-modal">
+            </div>
+            <div class="staircase-text-box">
+                <h3 class="staircase-title">You don’t have to see the whole staircase just take the first step</h3>
+                <p class="staircase-text">Amet in a suspendisse convallis eget, Amet in a suspendisse convallis egetAmet in a</p>
+                <button class="staircase-button" data-modal-open>Get Started</button>
+            </div>
+        </div>
+    </section>
 </main>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal-window">
+        <button type="button" class="close-modal-button" data-modal-close>
+            <svg class="icon-modal">
+                <use href="./images/svg/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="form_title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="form">
+            <label class="form-label">
+                <span class="label-text">Ім'я</span>
+                <input type="text" class="form-input" required>
+                <svg class="form-icon" fill="currentColor" width="18" height="18">
+                    <use href="./images/svg/icons.svg#icon-person-mod"></use>
+                </svg>
+            </label>
+            <label class="form-label">
+                <span class="label-text">Телефон</span>
+                <input type="text" class="form-input" required>
+                <svg class="form-icon" fill="currentColor" width="18" height="18">
+                    <use href="./images/svg/icons.svg#icon-phone-mod"></use>
+                </svg>
+            </label>
+            <label class="form-label">
+                <span class="label-text">Пошта</span>
+                <input type="email" class="form-input" required>
+                <svg class="form-icon" fill="currentColor" width="18" height="18">
+                    <use href="./images/svg/icons.svg#icon-mail-mod"></use>
+                </svg>
+            </label>
+            <label class="form-label">
+                <span class="label-text">Коментар</span>
+                <textarea name="" id="" class="form_textarea"  cols="30" rows="10" required placeholder="Введіть текст"></textarea>
+            </label>
+            <div class="checkbox-div">
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox" class="label_license">
+                            <span>
+                                Погоджуюся з розсилкою та приймаю <a href="#" class="form-a">Умови договору</a>
+                            </span>
+                </label>
+            </div>
+            <div class="button-form-div">
+                <button type="submit" class="form-button">Відправити</button>
+            </div>
+        </form>
+    </div>
+</div>
 <script src="./js/modal.js"></script>
 <script src="./js/nav.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/filter.js"></script>
-
-
 </body>
 </html>

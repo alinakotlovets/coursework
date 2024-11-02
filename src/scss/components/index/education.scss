@@ -77,7 +77,7 @@
     padding: 10px 8px 23px 7px;
     gap: 8px;
     border-radius: 6px 6px 15px 6px;
-    left: 245px;
+    left: 70%;
     top: 55%;
   }
 }
@@ -188,7 +188,7 @@
 }
 
 .education-box-right-title{
-  width: 533px; // спитати як тут без бо воно їде
+  max-width: 533px; // спитати як тут без бо воно їде
   color: $text-black;
   font-family: $text-Poppins;
   font-size: 48px;

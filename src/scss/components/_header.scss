@@ -54,7 +54,7 @@
   background-color: $green;
   color: $white;
   border-radius: 5px;
-  font: $text-Source-Sans-3;
+  font-family: $text-Source-Sans-3;
   transition: color 300ms ease-in-out;
   &:focus,
   &:hover{

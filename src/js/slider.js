@@ -1,19 +1,16 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 32,
+    slidesPerView: 3.25,
+    spaceBetween: 16,
+    loop: true,
         breakpoints: {
             1200: {
                 slidesPerView: 4,
                 spaceBetween: 32
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 3.5,
                 spaceBetween: 20
             },
-            420: {
-                slidesPerView: 4,
-                spaceBetween: 16
-            }
         },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -22,16 +19,17 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiperSkill", {
-    slidesPerView: 3,
-    spaceBetween: 32,
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 16,
     breakpoints: {
         1200: {
             slidesPerView: 3,
             spaceBetween: 32
         },
         768: {
-            slidesPerView: 3,
-            spaceBetween: 20
+            slidesPerView: 2,
+            spaceBetween: 16
         }
     },
     navigation: {

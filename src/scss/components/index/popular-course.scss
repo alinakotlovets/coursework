@@ -9,9 +9,10 @@
     gap: 16px;
   }
 
-  //jj
   @include tablet{
-    grid-template-columns: repeat(2, 1fr);
+
+    display: flex;
+    flex-wrap: wrap;
     gap: 22px;
   }
 }
@@ -113,16 +114,13 @@
   }
 }
 .popular-course-list-title{
-  width: 295px; // спитати як тут?
+  width: 295px;// спитати max
   color: $text-black;
   font-family: $text-Poppins;
   font-size: 24px;
   font-weight: 500;
   text-transform: capitalize;
   @include mobile{
-    //width: 152px;
-    //font-size: 13px;
-    //line-height: 20px;
     font-size: 14px;
     align-items: center;
   }

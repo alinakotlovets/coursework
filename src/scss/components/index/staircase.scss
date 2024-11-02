@@ -1,0 +1,63 @@
+.staircase {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url("../images/last%20CTA.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.staircase .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staircase-img{
+  width: 513px;
+  height: 517px;
+  position: absolute;
+  top: -10%;
+}
+
+.staircase-text-box{
+  padding-top: 40px;
+}
+
+.staircase-title{
+  max-width: 568px;
+  color: $white;
+  font-family: $text-Open-Sans;
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.staircase-text{
+  width: 543px;
+  color: #FFF;
+  font-family: $text-Open-Sans;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 89px;
+}
+.staircase-button{
+  color: $white;
+  background: $green;
+  display: flex;
+  width: 161px;
+  height: 60px;
+  font-family: $text-Source-Sans-3;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 76px;
+  transition: color 300ms ease-in-out;
+  &:hover,
+  &:focus{
+    background-color: $footer-form-green;
+  }
+}
+

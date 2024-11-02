@@ -16,6 +16,11 @@
     }
   }
 
+  .swiper-backface-hidden,
+  .swiper-slide {
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25); //спитати
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     height: 50px;
@@ -45,19 +50,31 @@
     }
   }
 
+  .swiper-slide{
+    width: 162px;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .swiper-wrapper{
+    width: 162px;
+    height: 100%;
+    border-radius: 5px;
+
+  }
+
   .skill-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 40px;
-    //@include mobile{
-    //  grid-template-columns: repeat(2, 1fr);
-    //  gap: 16px;
-    //}
-    //@include tablet{
-    //  grid-template-columns: repeat(2, 1fr);
-    //  gap: 22px;
-    //}
+    @include mobile{
+     display: flex;
+      gap: 16px;
+    }
+    @include tablet{
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
   }
 
   .skill-top-box{
@@ -77,10 +94,10 @@
     gap: 5px;
     border-radius: 50px;
     background: #09B451;
-    //@include mobile{
-    //  height: 36px;
-    //  border-radius: 28px;
-    //}
+    @include mobile{
+      height: 36px;
+      border-radius: 28px;
+    }
   }
 
 
@@ -92,9 +109,9 @@
     font-family: $text-Poppins;
     font-size: 18px;
     font-weight: 400;
-    //@include mobile{
-    //  font-size: 12px;
-    //}
+    @include mobile{
+      font-size: 12px;
+    }
   }
   .skill-top-box-title{
     color: $text-black;
@@ -102,29 +119,26 @@
     font-size: 32px;
     font-weight: 600;
     text-transform: capitalize;
-    //@include mobile{
-    //  font-size: 16px;
-    //}
+    @include mobile{
+      font-size: 16px;
+    }
 
   }
 
   .skill-list-element{
-    width:370px;;
     height: 100%;
     flex-shrink: 0;
     border-radius: 10px;
     background: $white;
-    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);// спитати чому нема обвожки?
-    //@include mobile{
-    //  width: 182px;
-    //  height: 100%;
-    //  border-radius: 5px;
-    //}
-    //@include tablet{
-    //  width: 335px;
-    //  height: 100%;
-    //  border-radius: 7px;
-    //}
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+    @include mobile{
+      height: 100%;
+      border-radius: 5px;
+    }
+    @include tablet{
+      height: 100%;
+      border-radius: 7px;
+    }
   }
 
   .skill-list-img{
@@ -132,10 +146,10 @@
     height: 215px;
     flex-shrink: 0;
     border-radius: 5px;
-    //@include mobile{
-    //  width: 182px;
-    //  height: 103px;
-    //}
+    @include mobile{
+      width: 100%;
+      height: 103px;
+    }
     //@include tablet{
     //  width: 100%;
     //  height: auto;
@@ -147,12 +161,12 @@
     padding: 24px;
     justify-content: flex-start;
     align-items: flex-start;
-    //@include mobile{
-    //  padding: 3px 13px 3px;
-    //}
-    //@include tablet{
-    //  padding: 5px 20px 5px;
-    //}
+    @include mobile{
+      padding: 3px 13px 3px;
+    }
+    @include tablet{
+      padding: 5px 20px 5px;
+    }
   }
   .skill-list-title{
     width: 295px;
@@ -161,13 +175,13 @@
     font-size: 24px;
     font-weight: 500;
     text-transform: capitalize;
-    //@include mobile{
-    //  font-size: 14px;
-    //  align-items: center;
-    //}
-    //@include tablet{
-    //  font-size: 20px;
-    //}
+    @include mobile{
+      font-size: 14px;
+      align-items: center;
+    }
+    @include tablet{
+      font-size: 20px;
+    }
   }
 
   .skill-list-rating-box{
@@ -180,10 +194,10 @@
   .skill-list-rating-star{
     width: 18px;
     height: 18px;
-    //@include mobile{
-    //  width: 8px;
-    //  height: 8px;
-    //}
+    @include mobile{
+      width: 8px;
+      height: 8px;
+    }
   }
 
   .skill-list-rating-text{
@@ -192,9 +206,9 @@
     font-size: 13px;
     font-weight: 400;
     align-self: center;
-    //@include mobile{
-    //  font-size: 8px;
-    //}
+    @include mobile{
+      font-size: 8px;
+    }
   }
 
   .skill-list-text-box{
@@ -202,15 +216,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    //@include mobile{
-    //  padding: 0 13px 0;
-    //  flex-wrap: wrap-reverse;
-    //  gap: 5px;
-    //  margin-bottom: 8px;
-    //}
-    //@include tablet{
-    //  padding: 5px 20px 5px;
-    //}
+    @include mobile{
+      padding: 0 13px 0;
+      flex-wrap: wrap-reverse;
+      gap: 5px;
+      margin-bottom: 8px;
+    }
+    @include tablet{
+      padding: 5px 20px 5px;
+    }
   }
 
   .skill-list-text-time{
@@ -218,22 +232,22 @@
     font-family: $text-Poppins;
     font-size: 16px;
     font-weight: 500;
-    //@include mobile{
-    //  font-size: 12px;
-    //}
-    //@include tablet{
-    //  font-size: 14px;
-    //}
+    @include mobile{
+      font-size: 12px;
+    }
+    @include tablet{
+      font-size: 14px;
+    }
   }
   .skill-list-students-img{
     width: 13.333px;
     height: 12px;
     flex-shrink: 0;
     fill: $green;
-    //@include mobile {
-    //  width: 10px;
-    //  height: 9px;
-    //}
+    @include mobile {
+      width: 10px;
+      height: 9px;
+    }
   }
 
   .skill-list-students-text{
@@ -241,12 +255,12 @@
     font-family: $text-Poppins;
     font-size: 16px;
     font-weight: 500;
-    //@include mobile{
-    //  font-size: 12px;
-    //}
-    //@include tablet{
-    //  font-size: 14px;
-    //}
+    @include mobile{
+      font-size: 12px;
+    }
+    @include tablet{
+      font-size: 14px;
+    }
   }
   .skill-list-students-box{
     display: flex;
@@ -260,14 +274,14 @@
     font-size: 24px;
     font-weight: 600;
     padding-left: 40px;
-    //@include mobile{
-    //  font-size: 14px;
-    //  padding-left: 0;
-    //}
-    //@include tablet{
-    //  font-size: 20px;
-    //  padding-left: 20px;
-    //}
+    @include mobile{
+      font-size: 14px;
+      padding-left: 0;
+    }
+    @include tablet{
+      font-size: 20px;
+      padding-left: 20px;
+    }
   }
 
 }

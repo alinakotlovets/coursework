@@ -44,7 +44,7 @@
   z-index: -1;
   @include mobile{
     height: 700px;
-    left: 250px;
+    left: 73%;
     top: 0;
   }
   @include tablet{
@@ -109,6 +109,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  font-family: $text-Source-Sans-3;
   background-color: $green;
   color: $white;
   border-radius: 5px;
@@ -171,7 +172,7 @@
     padding: 9px 12px 6px 13px;
     height: auto;
     width: auto;
-    left: 6px;
+    left: 3%;
   }
   @include tablet{
     border-radius: 7px 7px 16px 7px;
@@ -206,6 +207,8 @@
   }
 }
 .hero-box-instructors-title{
+  font-family: $text-Source-Sans-3;
+  font-size: 20px;
   @include mobile{
     font-size: 11px;
     width: 115px;
@@ -232,7 +235,7 @@
   @include mobile{
     border-radius: 4px 4px 10px 4px;
     box-shadow: 0px 0px 42.698px 0px rgba(112, 112, 112, 0.25);
-    left: 270px;
+    left: 70%;
   }
   @include tablet{
     border-radius: 7px 7px 15px 4px;
