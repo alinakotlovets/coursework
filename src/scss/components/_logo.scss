@@ -12,6 +12,21 @@
   }
 }
 
+.footer-logo{
+  color: $white;
+  font-family: $text-Poppins;
+  font-size: 32.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 30px;
+  @include mobile{
+    font-size: 23px;
+  }
+}
+
 .dots {
   position: absolute;
   top: 8px;
