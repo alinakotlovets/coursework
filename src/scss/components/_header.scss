@@ -147,8 +147,8 @@
 
 .mobile-link-element-text{
   font-family: $text-Open-Sans;
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 .mobile-link-element{
   cursor: pointer;
@@ -161,6 +161,7 @@
 .mobile-box-button{
   display: flex;
   padding-top: 100px;
+  font-family: $text-Source-Sans-3;
 }
 .mobile-box-button-element{
   width: 123px;
