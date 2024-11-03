@@ -138,7 +138,7 @@
 
 
   .review-box-title{
-    max-width: 382px;
+    width: 382px;
     color: $black;
     font-family: $text-Open-Sans;
     font-size: 48px;
@@ -150,7 +150,7 @@
     @include mobile{
       position: relative;
       font-size:24px;
-      max-width: 252px;
+      width: 240px;
     }
     @include tablet{
       position: relative;
