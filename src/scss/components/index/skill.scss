@@ -55,27 +55,27 @@
     height: 100%;
     border-radius: 5px;
   }
-  .swiper-wrapper{
+  .swiper-wrapper {
     width: 162px;
     height: 100%;
     border-radius: 5px;
 
   }
 
-  .skill-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 40px;
-    @include mobile{
-     display: flex;
-      gap: 16px;
-    }
-    @include tablet{
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-  }
+  //.skill-list{ //нема такого класу що я взагалі робила
+  //  display: grid;
+  //  grid-template-columns: repeat(3, 1fr);
+  //  gap: 30px;
+  //  margin-bottom: 40px;
+  //  @include mobile{
+  //   display: flex;
+  //    gap: 16px;
+  //  }
+  //  @include tablet{
+  //    grid-template-columns: repeat(2, 1fr);
+  //    gap: 22px;
+  //  }
+  //}
 
   .skill-top-box{
     display: flex;

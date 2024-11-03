@@ -37,3 +37,24 @@ var swiper = new Swiper(".mySwiperSkill", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+var swiper = new Swiper(".mySwiperReview", {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 16,
+    breakpoints: {
+        1200: {
+            slidesPerView: 2,
+            spaceBetween: 32
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 16
+        }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
