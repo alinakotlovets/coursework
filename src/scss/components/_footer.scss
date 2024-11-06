@@ -166,3 +166,33 @@
     background: $footer-form-green;
   }
 }
+
+
+
+.message {
+  position: fixed; /* Фіксоване положення поверх усього контенту */
+  top: 50%; /* Вирівнювання по центру */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрування по горизонталі та вертикалі */
+  z-index: 1000; /* Високий z-index для перекриття іншого контенту */
+  padding: 20px; /* Внутрішній відступ для тексту */
+  border-radius: 8px; /* Закруглені кути */
+  text-align: center; /* Центрування тексту */
+  display: none; /* Початково приховано */
+}
+
+/* Стилі для повідомлення про помилку */
+#error-message {
+  color: white;
+  background-color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Стилі для успішного повідомлення */
+#overlay {
+  color: white;
+  background-color: green;
+  font-size: 16px;
+  font-weight: bold;
+}

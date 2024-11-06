@@ -50,10 +50,8 @@
 .popular-course-top-box-select{
   width: auto;
   height: 46px;
-  display: inline-flex;
+  display: flex;
   padding: 11px 16px;
-  text-align: center;
-  flex-direction: column;
   align-items: center;
   gap: 5px;
   border-radius: 50px;
@@ -73,7 +71,7 @@
 .popular-course-label::before {
   content: '';
   position: absolute;
-  right: 16px; /* Відступ від правого краю */
+  right: 6px;
   top: 35%;
   transform: rotate(-45deg);
   width: 8px;
@@ -84,6 +82,14 @@
   transition: transform 0.3s;
   z-index: 1;
   pointer-events: none;
+  @include mobile{
+    right: 0;
+    left: 102px;
+  }
+  @include tablet{
+    right: 0;
+    left: 144px;
+  }
 }
 
 
@@ -179,7 +185,7 @@
   }
 }
 .popular-course-list-title{
-  width: 295px;// спитати max
+  width: 295px;
   color: $text-black;
   font-family: $text-Poppins;
   font-size: 24px;

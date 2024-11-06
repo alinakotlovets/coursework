@@ -26,3 +26,14 @@ function sendEmail() {
             document.getElementById('overlay').style.display = 'block';
         })
 }
+
+// Функція для показу повідомлення
+// function showMessage(id) {
+//     var message = document.getElementById(id);
+//     message.style.display = 'block';
+//
+//     // Приховуємо повідомлення через 10 секунд
+//     setTimeout(() => {
+//         message.style.display = 'none';
+//     }, 1000); // 10000 мілісекунд = 10 секунд
+// }

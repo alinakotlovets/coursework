@@ -66,12 +66,15 @@
   }
 
   .review-box {
+
     width: 30%;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
     background: $white;
     z-index: 2;
+    @include desktop{
+      flex-direction: column;
+    }
 
     @include mobile {
       width: auto;
@@ -96,7 +99,7 @@
       @include mobile {
         position: relative;
         font-size: 24px;
-        width: 240px;
+        min-width: 240px;
       }
       @include tablet {
         position: relative;
@@ -114,13 +117,19 @@
       width: 210px;
       @include tablet {
         width: 140px;
-        top: 10.5%;
-        left: 25%;
+        top: 40px;
+        left: -32%;
+        height: 10px;
+        flex-shrink: 0;
+        stroke-width: 2px;
       }
       @include mobile {
         width: 105px;
-        top: 8.5%;
-        left: 124px;
+        top: 30px;
+        left: -120px;
+        height: 8px;
+        flex-shrink: 0;
+        stroke-width: 2px;
       }
     }
   }
@@ -136,6 +145,15 @@
     gap: 48px;
     min-width: 60px;
     min-height: 60px;
+    @include tablet{
+      align-items: flex-end;
+    }
+    @include mobile{
+      align-items: flex-end;
+      position: relative;
+      left: -101px;
+      gap: 30px;
+    }
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -154,7 +172,7 @@
         height: 47px;
       }
       @include mobile {
-        width: 35px;
+        min-width: 35px;
         height: 35px;
       }
     }

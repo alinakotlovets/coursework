@@ -660,9 +660,9 @@
                            placeholder="Your Email address" required>
                 </label>
                 <button onclick="sendEmail()" type="button" class="footer-button">Subscribe</button>
-                <p id="error-message" style="color: red; display:none">Не правильно введено email</p>
+                <p id="error-message" class="message" style="display:none">Не правильно введено email</p>
             </form>
-            <div id="overlay" style="color:green; display: none;">
+            <div class="message" id="overlay" style="display: none;">
                 <p>Subscribe successful</p>
             </div>
 
@@ -707,7 +707,7 @@
             <div class="checkbox-div">
                 <input type="checkbox" id="checkbox" name="checkbox">
                 <label for="checkbox" class="label_license">
-                            <span>
+                            <span class="checkmark">
                                 Погоджуюся з розсилкою та приймаю <a href="#" class="form-a">Умови договору</a>
                             </span>
                 </label>
