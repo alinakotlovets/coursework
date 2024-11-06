@@ -24,9 +24,11 @@
 }
 
 
+//галочка
+
+
 .popular-course-top-box-select{
   width: auto;
-  appearance: none;
   height: 46px;
   display: inline-flex;
   padding: 8px 16px;
@@ -35,12 +37,72 @@
   align-items: center;
   gap: 5px;
   border-radius: 50px;
-  background: #09B451;
+  background: $green;
+  position: relative;
+  appearance: none;
+  cursor: pointer;
   @include mobile{
     height: 36px;
     border-radius: 28px;
   }
 }
+
+.popular-course-top-box-select{
+  width: auto;
+  height: 46px;
+  display: inline-flex;
+  padding: 11px 16px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border-radius: 50px;
+  background: $green;
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+  @include mobile{
+    height: 36px;
+    border-radius: 28px;
+  }
+}
+.popular-course-label{
+  align-items: center;
+  position: relative;
+}
+.popular-course-label::before {
+  content: '';
+  position: absolute;
+  right: 16px; /* Відступ від правого краю */
+  top: 35%;
+  transform: rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform-origin: center;
+  transition: transform 0.3s;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+
+.popular-course-top-box-select-element,
+.popular-course-top-box-select{
+  border: none;
+  outline: none;
+  text-align: center;
+  color: $white;
+  font-family: $text-Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  @include mobile{
+    font-size: 12px;
+  }
+}
+
+
 
 
 .popular-course-top-box-select-element,

@@ -201,21 +201,25 @@
         <div class="container">
             <div class="popular-course-top-box">
                 <h3 class="popular-course-top-box-title">Most Popular courses</h3>
-                <label for="course-select" class="popular-course-label"></label>
-                <select id="course-select" class="popular-course-top-box-select">
-                    <option class="popular-course-top-box-select-element" value="1" data-name="all">Sort by</option>
-                    <option class="popular-course-top-box-select-element" value="2" data-name="technology">Technology
-                    </option>
-                    <option class="popular-course-top-box-select-element" value="3" data-name="marketing">Marketing
-                    </option>
-                    <option class="popular-course-top-box-select-element" value="4" data-name="photography">
-                        Photography
-                    </option>
-                    <option class="popular-course-top-box-select-element" value="5" data-name="cooking">Cooking</option>
-                    <option class="popular-course-top-box-select-element" value="6" data-name="programming">
-                        Programming
-                    </option>
-                </select>
+                <label for="course-select" class="popular-course-label">
+                    <span class="visually-hidden">Courses select</span>
+                    <select id="course-select" class="popular-course-top-box-select">
+                        <option class="popular-course-top-box-select-element" value="1" data-name="all">Sort by</option>
+                        <option class="popular-course-top-box-select-element" value="2" data-name="technology">
+                            Technology
+                        </option>
+                        <option class="popular-course-top-box-select-element" value="3" data-name="marketing">Marketing
+                        </option>
+                        <option class="popular-course-top-box-select-element" value="4" data-name="photography">
+                            Photography
+                        </option>
+                        <option class="popular-course-top-box-select-element" value="5" data-name="cooking">Cooking
+                        </option>
+                        <option class="popular-course-top-box-select-element" value="6" data-name="programming">
+                            Programming
+                        </option>
+                    </select>
+                </label>
             </div>
             <ul class="popular-course-list">
                 <li class="popular-course-list-element">
@@ -489,43 +493,54 @@
     <section class="review">
         <div class="container">
             <h3 class="review-title">Reviews</h3>
-            <div class="swiper mySwiperReview">
             <div class="review-box">
-                <h2 class="review-box-title">What our <span class="review-box-title-green">Students</span> say about us</h2>
+                <h2 class="review-box-title">What our <span class="review-box-title-green">Students</span> say about us
+                </h2>
                 <img class="review-box-title-vector" src="images/svg/Vector%2019.svg" alt="vector">
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="review-box-navigation">
+                    <div class="swiper-button-prev review-slide-prev"></div>
+                    <div class="swiper-button-next review-slide-next"></div>
+                </div>
             </div>
+            <div class="swiper mySwiperReview">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="review-slide-top-box">
                             <img class="review-slide-top-box-img" src="images/Frame%206526.svg" alt="Mohh-Jumah">
                             <div class="review-slide-top-box-text-box">
-                            <h3 class="review-slide-top-box-title">Michael Anderson</h3>
-                            <p class="review-slide-top-box-text">Senior Developer</p>
+                                <h3 class="review-slide-top-box-title">Michael Anderson</h3>
+                                <p class="review-slide-top-box-text">Senior Developer</p>
                             </div>
                         </div>
-                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis</p>
+                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non,
+                            quis enim velit tempus. Interdum duis imperdiet venenatis</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="review-slide-top-box">
-                            <img class="review-slide-top-box-img" src="images/Frame%206526%20(1).svg" alt="Olivia-Carter">
+                            <img class="review-slide-top-box-img" src="images/Frame%206526%20(1).svg"
+                                 alt="Olivia-Carter">
                             <div class="review-slide-top-box-text-box">
-                            <h3 class="review-slide-top-box-title">Olivia Carter</h3>
-                            <p class="review-slide-top-box-text">Data Analyst</p>
+                                <h3 class="review-slide-top-box-title">Olivia Carter</h3>
+                                <p class="review-slide-top-box-text">Data Analyst</p>
                             </div>
                         </div>
-                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis</p>
+                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non,
+                            quis enim velit tempus. Interdum duis imperdiet venenatis</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="review-slide-top-box">
-                            <img class="review-slide-top-box-img" src="images/Frame%206526%20(2).svg" alt="Ethan-Harris">
+                            <img class="review-slide-top-box-img" src="images/Frame%206526%20(2).svg"
+                                 alt="Ethan-Harris">
                             <div class="review-slide-top-box-text-box">
-                            <h3 class="review-slide-top-box-title">Ethan Harris</h3>
-                            <p class="review-slide-top-box-text">Ux Lead</p>
+                                <h3 class="review-slide-top-box-title">Ethan Harris</h3>
+                                <p class="review-slide-top-box-text">Ux Lead</p>
                             </div>
                         </div>
-                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non, quis enim velit tempus. Interdum duis imperdiet venenatis</p>
+                        <p class="review-slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Consectetur ac blandit nam massa massa elementum mollis lectus. Sit ultricies nisl amet non,
+                            quis enim velit tempus. Interdum duis imperdiet venenatis</p>
                     </div>
                 </div>
             </div>
@@ -610,37 +625,39 @@
                     <a href=""><p class="footer-text-element">Home</p></a>
                     <a href=""><p class="footer-text-element">Services</p></a>
                     <a href=""><p class="footer-text-element">Training</p></a>
-                     <a href=""><p class="footer-text-element">Resources</p></a>
-                     <a href=""><p class="footer-text-element">About Us</p></a>
+                    <a href=""><p class="footer-text-element">Resources</p></a>
+                    <a href=""><p class="footer-text-element">About Us</p></a>
                 </li>
                 <li class="footer-text-list-element">
-                     <a href=""><p class="footer-text-element">SME</p></a>
-                     <a href=""><p class="footer-text-element">Solution</p></a>
-                     <a href=""><p class="footer-text-element">Reviews</p></a>
-                     <a href=""><p class="footer-text-element">Blog</p></a>
+                    <a href=""><p class="footer-text-element">SME</p></a>
+                    <a href=""><p class="footer-text-element">Solution</p></a>
+                    <a href=""><p class="footer-text-element">Reviews</p></a>
+                    <a href=""><p class="footer-text-element">Blog</p></a>
                 </li>
                 <li class="footer-text-list-element">
-                     <a href=""><p class="footer-text-element">Contact Us</p></a>
-                     <a href=""><p class="footer-text-element">Place a Call</p></a>
-                     <a href=""><p class="footer-text-element">Email</p></a>
-                     <a href=""><p class="footer-text-element">Wischool@gmail.com</p></a>
+                    <a href=""><p class="footer-text-element">Contact Us</p></a>
+                    <a href=""><p class="footer-text-element">Place a Call</p></a>
+                    <a href=""><p class="footer-text-element">Email</p></a>
+                    <a href=""><p class="footer-text-element">Wischool@gmail.com</p></a>
                 </li>
                 <li class="footer-text-list-element">
-                     <a href=""><p class="footer-text-element">Job Opening</p></a>
-                     <a href=""><p class="footer-text-element">News</p></a>
-                     <a href=""><p class="footer-text-element">Research</p></a>
+                    <a href=""><p class="footer-text-element">Job Opening</p></a>
+                    <a href=""><p class="footer-text-element">News</p></a>
+                    <a href=""><p class="footer-text-element">Research</p></a>
                 </li>
                 <li class="footer-text-list-element">
-                     <a href=""><p class="footer-text-element">Uk Privacy Policy</p></a>
-                     <a href=""><p class="footer-text-element">Terms of Use</p></a>
+                    <a href=""><p class="footer-text-element">Uk Privacy Policy</p></a>
+                    <a href=""><p class="footer-text-element">Terms of Use</p></a>
                 </li>
             </ul>
         </div>
         <div class="footer-subscribe-box">
             <h3 class="footer-subscribe-title">Subscribe to get latest updates</h3>
-            <form class="footer-form">
-                <label class="footer-label-input"> <span class="visually-hidden"></span>
-                    <input type="email" class="footer-input" required placeholder="Your Email address">
+            <form class="footer-form" onsubmit="emailSend(event)">
+                <label class="footer-label-input">
+                    <span class="visually-hidden"></span>
+                    <input type="email" id="email-input" name="email" class="footer-input"
+                           placeholder="Your Email address" required autocomplete="email">
                 </label>
                 <button type="submit" class="footer-button">Subscribe</button>
             </form>
@@ -679,7 +696,7 @@
             </label>
             <label class="form-label">
                 <span class="label-text">Коментар</span>
-                <textarea name="" id="" class="form_textarea" cols="30" rows="10" required
+                <textarea class="form_textarea" cols="30" rows="10" required
                           placeholder="Введіть текст"></textarea>
             </label>
             <div class="checkbox-div">
@@ -700,5 +717,6 @@
 <script src="./js/nav.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/filter.js"></script>
+<script src="js/email.js"></script>
 </body>
 </html>

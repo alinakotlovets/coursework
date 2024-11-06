@@ -112,10 +112,10 @@
 }
 .footer-form{
   overflow: hidden;
-  border-radius: 5px;
+  //border-radius: 5px;
   flex-shrink: 0;
   display: flex;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .footer-label-input{
 
@@ -123,6 +123,7 @@
 .footer-input{
   width: 419px;
   height: 52px;
+  border-radius: 5px 0 0 5px;
   flex: 1;
   background: #FFF;
   font-family: $text-Poppins;
@@ -143,6 +144,7 @@
 }
 
 .footer-button{
+  border-radius: 0 5px 5px 0;
   width: 128px;
   height: 52px;
   background: $green;

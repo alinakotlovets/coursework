@@ -44,7 +44,7 @@ var swiper = new Swiper(".mySwiperReview", {
     spaceBetween: 16,
     breakpoints: {
         1200: {
-            slidesPerView: 2,
+            slidesPerView:1.5,
             spaceBetween: 32
         },
         768: {
@@ -53,8 +53,8 @@ var swiper = new Swiper(".mySwiperReview", {
         }
     },
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".review-slide-next",
+        prevEl: ".review-slide-prev",
     },
 });
 
