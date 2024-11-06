@@ -653,14 +653,19 @@
         </div>
         <div class="footer-subscribe-box">
             <h3 class="footer-subscribe-title">Subscribe to get latest updates</h3>
-            <form class="footer-form" onsubmit="emailSend(event)">
+            <form id="contact-form" class="footer-form">
                 <label class="footer-label-input">
                     <span class="visually-hidden"></span>
-                    <input type="email" id="email-input" name="email" class="footer-input"
-                           placeholder="Your Email address" required autocomplete="email">
+                    <input type="email" id="email" name="email" class="footer-input"
+                           placeholder="Your Email address" required>
                 </label>
-                <button type="submit" class="footer-button">Subscribe</button>
+                <button onclick="sendEmail()" type="button" class="footer-button">Subscribe</button>
+                <p id="error-message" style="color: red; display:none">Не правильно введено email</p>
             </form>
+            <div id="overlay" style="color:green; display: none;">
+                <p>Subscribe successful</p>
+            </div>
+
         </div>
     </div>
 </footer>
@@ -713,6 +718,16 @@
         </form>
     </div>
 </div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "_ArVSpWo97PjT0tNX",
+        });
+    })();
+</script>
 <script src="./js/modal.js"></script>
 <script src="./js/nav.js"></script>
 <script src="./js/slider.js"></script>

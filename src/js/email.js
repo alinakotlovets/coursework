@@ -1,28 +1,28 @@
-// function emailSend(event) {
-//     event.preventDefault(); // Зупиняє стандартне відправлення форми
-//
-//     var email = document.getElementById('email-input').value;
-//
-//     var messageBody = "Hi, you just subscribed to our website with this email: " + email;
-//
-//     Email.send({
-//         Host: "smtp.elasticemail.com", // Змініть на ваш SMTP-хост
-//         Username: "a.kotlovets@lntu.edu.ua", // Ваш логін
-//         Password: "838A330A4BF8698602584814C95928F768C8", // Ваш пароль
-//         To: email, // Відправка на адресу, введену користувачем
-//         From: "a.kotlovets@lntu.edu.ua", // Ваша адреса відправника
-//         Subject: "Welcome!",
-//         Body: messageBody
-//     }).then(
-//         message => {
-//             if (message === 'OK') {
-//                 swal("Successful", "You have subscribed successfully!", "success");
-//             } else {
-//                 swal("Error", "Something went wrong. Please try again.", "error");
-//             }
-//         }
-//     ).catch(error => {
-//         console.error("Error:", error);
-//         swal("Error", "An error occurred. Check the console for details.", "error");
-//     });
-// }
+function sendEmail() {
+    const email = document.getElementById('email').value;
+    const errorMessage = document.getElementById('error-message');
+
+    // Регулярний вираз для перевірки формату email
+    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    // Перевіряємо, чи підходить email під шаблон
+    if (!emailRegex.test(email)) {
+        errorMessage.style.display = 'block';
+        errorMessage.innerText = 'Введіть правильну пошту';
+        return; // Зупиняємо виконання, якщо формат неправильний
+    }
+
+    // Якщо формат правильний, ховаємо повідомлення про помилку
+    errorMessage.style.display = 'none';
+
+    // Відправляємо email через EmailJS
+    let params = {
+        email: email
+    };
+
+    emailjs.send("service_1tuftii","template_m4c31eg", params)
+        .then(function (response) {
+            document.getElementById('contact-form').style.display = 'none';
+            document.getElementById('overlay').style.display = 'block';
+        })
+}
