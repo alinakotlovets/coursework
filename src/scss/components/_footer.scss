@@ -112,7 +112,7 @@
 }
 .footer-form{
   overflow: hidden;
-  //border-radius: 5px;
+  border-radius: 5px; //комент
   flex-shrink: 0;
   display: flex;
   padding-bottom: 50px;
@@ -123,7 +123,7 @@
 .footer-input{
   width: 419px;
   height: 52px;
-  border-radius: 5px 0 0 5px;
+  //border-radius: 5px 0 0 5px; //комент
   flex: 1;
   background: #FFF;
   font-family: $text-Poppins;
@@ -144,7 +144,7 @@
 }
 
 .footer-button{
-  border-radius: 0 5px 5px 0;
+  //border-radius: 0 5px 5px 0; //комент
   width: 128px;
   height: 52px;
   background: $green;
@@ -170,29 +170,29 @@
 
 
 .message {
-  position: fixed; /* Фіксоване положення поверх усього контенту */
-  top: 50%; /* Вирівнювання по центру */
+  position: fixed;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Центрування по горизонталі та вертикалі */
-  z-index: 1000; /* Високий z-index для перекриття іншого контенту */
-  padding: 20px; /* Внутрішній відступ для тексту */
-  border-radius: 8px; /* Закруглені кути */
-  text-align: center; /* Центрування тексту */
-  display: none; /* Початково приховано */
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: none;
 }
 
-/* Стилі для повідомлення про помилку */
 #error-message {
   color: white;
   background-color: red;
   font-size: 16px;
   font-weight: bold;
+  margin-top: 18%;
 }
 
-/* Стилі для успішного повідомлення */
 #overlay {
   color: white;
-  background-color: green;
+  margin-top: 18%;
+  background-color: $green;
   font-size: 16px;
   font-weight: bold;
 }
