@@ -112,18 +112,15 @@
 }
 .footer-form{
   overflow: hidden;
-  border-radius: 5px; //комент
   flex-shrink: 0;
   display: flex;
   padding-bottom: 50px;
 }
-.footer-label-input{
 
-}
 .footer-input{
   width: 419px;
   height: 52px;
-  //border-radius: 5px 0 0 5px; //комент
+  border-radius: 5px 0 0 5px;
   flex: 1;
   background: #FFF;
   font-family: $text-Poppins;
@@ -144,7 +141,7 @@
 }
 
 .footer-button{
-  //border-radius: 0 5px 5px 0; //комент
+  border-radius: 0 5px 5px 0;
   width: 128px;
   height: 52px;
   background: $green;
