@@ -1,3 +1,6 @@
+.popular-course{
+  margin-bottom: 120px;
+}
 .popular-course-list{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,6 +44,11 @@
   position: relative;
   appearance: none;
   cursor: pointer;
+  transition: background-color 300ms ease-in-out;
+  &:focus,
+  &:hover{
+    background-color: $footer-form-green;
+  }
   @include mobile{
     height: 36px;
     border-radius: 28px;
@@ -51,7 +59,7 @@
   width: auto;
   height: 46px;
   display: flex;
-  padding: 11px 16px;
+  padding: 11px 32px 11px 16px;
   align-items: center;
   gap: 5px;
   border-radius: 50px;
@@ -71,7 +79,7 @@
 .popular-course-label::before {
   content: '';
   position: absolute;
-  right: 6px;
+  right: 14px;
   top: 35%;
   transform: rotate(-45deg);
   width: 8px;
@@ -91,6 +99,8 @@
     left: 144px;
   }
 }
+
+
 
 
 

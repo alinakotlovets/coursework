@@ -1,4 +1,8 @@
 .skill{
+  .container{
+    padding-left: 0; //не міняє
+    padding-right: 0;
+  }
   margin-bottom: 98px;
   @include mobile{
     margin-bottom: 56px;
@@ -11,14 +15,14 @@
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 64px;
+    padding-left: 15px;
     @include mobile{
       font-size: 16px;
     }
   }
 
+
   .swiper {
-    //padding-bottom: 20px;
-    //padding-top: 20px;
     padding: 20px;
   }
 
@@ -33,8 +37,16 @@
     font-size: 20px;
     color: $green;
     border-radius: 50px;
-    top: 105px;
+    top: 150px;
     background: white;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: $green;
+      color: $white; // змінює колір іконок
+    }
     @include mobile{
       display: none;
     }
@@ -43,9 +55,16 @@
     }
   }
 
+  .swiper-button-next{
+    right: 4%;
+  }
+  .swiper-button-prev{
+    left: 4%;
+  }
+
   .swiper-button-prev:after,
   .swiper-button-next:after{
-    top: 105px;
+    top: 150px;
     font-size: 20px;
     @include mobile{
       display: none;

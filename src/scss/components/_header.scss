@@ -55,7 +55,7 @@
   color: $white;
   border-radius: 5px;
   font-family: $text-Source-Sans-3;
-  transition: color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
   &:focus,
   &:hover{
     background-color: $footer-form-green;

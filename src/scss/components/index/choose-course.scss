@@ -17,6 +17,14 @@
       color: $green;
       border-radius: 50px;
       background: white;
+      transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+      cursor: pointer;
+
+      &:focus,
+      &:hover {
+        background-color: $green;
+        color: $white; // змінює колір іконок
+      }
       @include mobile{
         display: none;
       }
@@ -28,6 +36,7 @@
     .swiper-button-prev:after,
     .swiper-button-next:after{
       font-size: 20px;
+
       @include mobile{
         display: none;
       }
@@ -35,6 +44,8 @@
         display: none;
       }
     }
+
+
 
   .course-title{
     color:$text-black;
