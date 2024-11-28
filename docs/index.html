@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
     <title>WiSchool</title>
+    <link rel="icon" type="image/png" href="images/logo-web.png">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
                     <a href="#instructors" class="header-link-element-text">Instuctors</a>
                 </li>
                 <li class="header-link-element">
-                    <a href="" class="header-link-element-text">Schedules</a>
+                    <a href="#advantages" class="header-link-element-text">Schedules</a>
                 </li>
             </ul>
         </nav>
@@ -60,7 +61,7 @@
                     <a href="#instructors" class="mobile-link-element-text" data-menu-link>Instructors</a>
                 </li>
                 <li class="mobile-link-element">
-                    <a href="#schedules" class="mobile-link-element-text" data-menu-link>Schedules</a>
+                    <a href="#advantages" class="mobile-link-element-text" data-menu-link>Schedules</a>
                 </li>
             </ul>
             <nav class="mobile-box-button">
@@ -111,7 +112,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
             <ul class="advantages-list">
                 <li class="advantages-list-item">
@@ -724,10 +725,8 @@
         </form>
     </div>
 </div>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
     (function(){
         emailjs.init({
             publicKey: "_ArVSpWo97PjT0tNX",
